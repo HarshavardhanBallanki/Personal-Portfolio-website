@@ -262,6 +262,9 @@ nav ul li a:hover {
   max-width: 100%;
   max-height: 100%;
 }
+ #carouselMobile {
+    display: none;
+  }
 .card {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -759,7 +762,7 @@ form #submit, #clear {
         gap: 10px;
     }
     .thirdSection {
-        height: 150vh;
+        height: 135vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -784,7 +787,7 @@ form #submit, #clear {
     margin-right: 8px;
   }
     .fourthSection {
-        height: 60vh;
+        height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -809,6 +812,13 @@ form #submit, #clear {
         width: 60px;
         font-size: 0.35rem;
     }
+    .carousel-item {
+        flex-direction: column;
+      }
+      .carousel-item > .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     .fifthSection {
         display: flex;
         flex-direction: column;
@@ -840,6 +850,7 @@ form #submit, #clear {
         height: 55vh;
     }
     .fifthSection .rightSection form {
+        margin-right: 170px;
         height: 55vh;
         display: flex;
         flex-direction: column;
@@ -855,13 +866,13 @@ form #submit, #clear {
     }
     input {
         height: 16px;
-        width: 180px;
+        width: 250px;
         padding: 10px;
         border-radius: 7.5px;
         font-size: 0.65rem;
     }
     textarea {
-        width: 180px;
+        width: 250px;
         height: 50px;
         padding: 10px;
         border-radius: 7.5px;
@@ -873,4 +884,10 @@ form #submit, #clear {
         width: 50px;
         padding: 0;
     }
+    #carouselMobile {
+    display: flex;
+  }
+    #carouselExampleControls {
+    display: none;
+  }
 }
