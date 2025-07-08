@@ -1,0 +1,876 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    }
+header {
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    }
+nav {
+    background-color: rgb(1, 1, 80);
+    padding: 10px;
+    }
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    height: 50px;
+}
+nav ul li a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    }
+    nav li:first-child {
+        margin-right: auto;
+        font-size: 1.25rem;
+    }
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+    }
+.sidebar {
+    position: fixed;
+    padding-top: 25px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.firstSection {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+.firstSection > div {
+    width: 30%;           
+    }
+.leftSection {
+    font-size: 2.5rem;
+}
+.leftSection .btn-1 {
+    margin-top: 20px;
+    padding: 12px;
+    background: rgb(0, 0, 40);
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.leftSection .btn-1:hover {
+    margin-top: 20px;
+    padding: 12px;
+    color: rgb(0, 0, 40);
+    background: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.leftSection .btn-2 {
+    margin-top: 20px;
+    padding: 12px;
+    color: rgb(0, 0, 40);
+    background: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.leftSection .btn-2:hover {
+    margin-top: 20px;
+    padding: 12px;
+    background: rgb(0, 0, 40);
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.rightSection img {
+    width: 80%;
+    margin: 50px 0;
+}
+.purple {
+    color: rgb(173, 117, 226);
+}
+.text-grey {
+    color: gray;
+}
+#element {
+    color: rgb(173, 117, 226);
+}
+.secondSection {
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.secondSection > div {
+    width: 45%;
+}
+.heading {
+    font-size: 2rem;
+}
+.secondSection .about {
+    border-left: 2px solid white;
+    height: 60vh;
+    list-style-type: none;
+}
+.heading-small {
+    font-size: 1.75rem;
+}
+.about {
+    padding-left: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10vh;
+}
+.profile, .education, .certifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vh;
+}
+
+.certifications .description div {
+    display: flex;
+    flex-direction: row;
+}
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+.thirdSection .heading {
+    text-align: center;
+}
+.thirdSection .services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.skills-section {
+    color: #ffffff;
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  background: #34495e;
+  color: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #fff;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.skill-card img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.fourthSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.fourthSection .card {
+    background-color: rgb(83, 80, 80);
+    color: white;
+    width: 18rem;
+}
+.fourthSection .projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fifthSection {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fifthSection .leftSection p {
+    font-size: 15px;
+}
+.fifthSection .leftSection {
+    height: 70vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.fifthSection .rightSection form {
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+form label h5 {
+    font-size: 0.95rem;
+}
+.fifthSection .rightSection form div {
+    display: flex;
+}
+input {
+    height: 40px;
+    width: 275px;
+    padding: 15px;
+    border-radius: 12px;
+}
+textarea {
+    padding: 10px;
+    border-radius: 12px;
+}
+form button {
+    border-radius: 12px;
+}
+form #submit, #clear {
+    height: 40px;
+    width: 80px;
+    padding: 0;
+}
+i {
+    color: white;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color:#333;
+  color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .social-icons a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue or customize */
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  word-wrap: break-word;
+}
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    header {
+        height: 10vh;
+    }
+    nav .navlinks li:first-child {
+        font-size: 1.1rem;
+    }
+    .firstSection {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    }
+.firstSection > div {
+    width: 30%;           
+    }
+.leftSection {
+    font-size: 1.1rem;
+}
+.leftSection .btn-1 {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgb(0, 0, 40);
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.leftSection .btn-1:hover {
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(0, 0, 40);
+    background: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.leftSection .btn-2 {
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(0, 0, 40);
+    background: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.leftSection .btn-2:hover {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgb(0, 0, 40);
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.career-objective .description {
+    font-size: 0.75rem;
+}
+.heading {
+    font-size: 1.5rem;
+}
+.heading-small {
+    font-size: 1rem;
+}
+.about {
+    padding-left: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10vh;
+    font-size: 0.65rem;
+    list-style-type: none;
+}
+.service-img {
+    border-radius: 20px;
+    height: 25vh;
+    width: 40vh;
+}
+.sub-service {
+    text-align: center;
+    overflow: auto;
+    font-size: 0.5rem;
+}
+.sub-service .heading {
+    text-align: center;
+}
+.fourthSection .card {
+    width: 15rem;
+}
+.card-title {
+    font-size: 0.85rem;
+}
+.card-text {
+    font-size: 0.6rem;
+}
+.fifthSection .leftSection p {
+    font-size: 10px;
+}
+.fifthSection .rightSection form {
+    width: 40%;
+    height: 55vh;
+}
+.fifthSection h4 {
+    font-size: 0.75rem;
+}
+label h5 {
+    font-size: 0.75rem;
+}
+input {
+    height: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+}
+textarea {
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 10px;
+}
+form #submit, #clear {
+    font-size: 0.7rem;
+    height: 30px;
+    width: 65px;
+    padding: 0;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+    height: 10vh;
+    }
+    nav .navlinks li:first-child {
+        font-size: 0.85rem;
+    }
+    nav .navlinks li {
+        font-size: 0.75rem;
+    }
+    nav .navlinks li a:hover {
+        font-size: 0.8rem;
+    }
+    .firstSection {
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px 0;
+    }
+    .firstSection > div {
+        width: 30%;           
+        }
+    .leftSection {
+        font-size: 1.25rem;
+    }
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .leftSection .btn-1 {
+        width: 100px;
+        height: 50px;
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+    .leftSection .btn-1:hover {
+        width: 100px;
+        height: 50px;
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+    .leftSection .btn-2 {
+        width: 100px;
+        height: 50px;
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+    .leftSection .btn-2:hover {
+       width: 100px;
+        height: 50px;
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+    .career-objective .description {
+        font-size: 0.65rem;
+    }
+    .secondSection {
+        height: 100vh;
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .heading-small {
+        font-size: 1rem;
+    }
+    .secondSection .about {
+        border-left: 0px;
+        padding: 0px;
+        height: 50vh;
+        list-style-type: none;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 5vh;
+        font-size: 0.65rem;
+        list-style-type: none;
+    }
+    .thirdSection {
+        height: 125vh;
+    }
+    .skills-container {
+    gap: 20px;
+    }
+    .skill-card {
+    width: 240px;
+    padding: 18px;
+  }
+    .fourthSection {
+        height: 60vh;
+    }
+    .fourthSection .card {
+        width: 12rem;
+    }
+    .card-title {
+        font-size: 0.65rem;
+    }
+    .card-text {
+        font-size: 0.45rem;
+    }
+    .card .btn {
+        height: 30px;
+        width: 120px;
+        font-size: 0.75rem;
+    }
+    .fifthSection .leftSection p {
+        font-size: 10px;
+    }
+    .fifthSection .rightSection form  {
+        width: 30%;
+        height: 60vh;
+    }
+    .fifthSection h4 {
+        font-size: 0.85rem;
+    }
+    form label h5 {
+        font-size: 0.75rem;
+    }
+    input {
+        height: 20px;
+        width: 200px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    textarea {
+        width: 200px;
+        height: 75px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    form #submit, #clear {
+        font-size: 0.7rem;
+        height: 30px;
+        width: 65px;
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    .hideOnSmallScreen {
+        display: none;
+    }
+    header {
+        height: 10vh;
+    }
+    header nav .navlinks li {
+        padding-top: 10px;
+        font-size: 0.85rem;
+    }
+    .firstSection {
+        margin: 0%;
+        padding: 0%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .firstSection > div {
+        width: 70%;           
+        }
+    .leftSection {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .rightSection {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .bg-image {
+        max-height: 280px;
+        max-width: 180px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .leftSection .btn-1 {
+        width: 90px;
+        height: 45px;
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    .leftSection .btn-1:hover {
+        width: 90px;
+        height: 45px;
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    .leftSection .btn-2 {
+        width: 90px;
+        height: 45px;
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    .leftSection .btn-2:hover {
+       width: 90px;
+        height: 45px;
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    .career-objective .description {
+        font-size: 0.5rem;
+        width: 100%;
+        text-align: left;
+    }
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0px;
+        text-align: left;
+        height: 100vh;
+        width: 100%;
+    }
+    .heading {
+        font-size: 1rem;
+    }
+    .heading-small {
+        font-size: 0.85rem;
+    }
+    .secondSection .about {
+        border-left: 0px;
+        padding: 0px;
+        height: 70vh;
+        width: 100%;
+        list-style-type: none;
+    }
+    .about {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.5rem;
+        list-style-type: none;
+        gap: 10px;
+    }
+    .career-objective {
+        width: 100vw;
+        text-align: center;
+    }
+    .profile, .education, .certifications {
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .thirdSection {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 5vh;
+    }
+    .skill-card {
+    width: 90%;
+    padding: 14px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .skill-card li {
+    font-size: 0.9rem;
+  }
+
+  .skill-card img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+    .fourthSection {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .projects {
+        margin-left: 20px;
+        flex-direction: column;
+    }
+    .fourthSection .card {
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+    }
+    .card-title {
+        font-size: 0.5rem;
+    }
+    .card-text {
+        font-size: 0.3rem;
+    }
+    .card .btn {
+        height: 20px;
+        width: 60px;
+        font-size: 0.35rem;
+    }
+    .fifthSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 105vh;
+    }
+    .fifthSection .heading {
+        margin-top: 10vh;
+    }
+    .fifthSection .leftSection {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .fifthSection .leftSection p {
+        font-size: 0.35rem;
+    }
+    #address, #phone, #email {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .fifthSection .rightSection {
+        width: 100%;
+        height: 55vh;
+    }
+    .fifthSection .rightSection form {
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0vh;
+    }
+    .fifthSection h4 {
+        font-size: 0.75rem;
+    }
+    form label h5 {
+        font-size: 0.65rem;
+    }
+    input {
+        height: 16px;
+        width: 180px;
+        padding: 10px;
+        border-radius: 7.5px;
+        font-size: 0.65rem;
+    }
+    textarea {
+        width: 180px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 7.5px;
+        font-size: 0.65rem;
+    }
+    form #submit, #clear {
+        font-size: 0.65rem;
+        height: 30px;
+        width: 50px;
+        padding: 0;
+    }
+}

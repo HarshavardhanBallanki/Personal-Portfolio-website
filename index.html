@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devfolio - Harshavardhan Ballanki</title>
+    <meta name="title" content="Devfolio - Harshavardhan Ballanki">
+    <meta name="description" content="This is a personal portfolio made by Harshavardhan Ballanki">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="26px" height="26px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="navlinks">
+            <li>Harsha's Portfolio</li>
+            <li class="hideOnSmallScreen"><a href="#home">Home</a></li>
+            <li class="hideOnSmallScreen"><a href="#about">About</a></li>
+            <li class="hideOnSmallScreen"><a href="#skills">Skills</a></li>
+            <li class="hideOnSmallScreen"><a href="#projects">Projects</a></li>
+            <li class="hideOnSmallScreen"><a href="#contact">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="20px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg></a></li>
+        </ul>
+    </nav>
+</header> 
+<main>
+    <section id="home" class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Harsha</span>
+            <div>and I am a passionate </div>
+            <span id="element"></span>
+            <div class="buttons">
+                <a style="color: white; text-decoration: none;" href="./HarshavardhanBallanki_InternshalaResume-6.pdf" download=""><button class="btn-1">Download Resume</button></a>
+                <a href="https://github.com/HarshavardhanBallanki"><button class="btn-2">Visit GitHub</button></a>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="./images/developer-removebg-preview.png" class="bg-image" alt="web-developer">
+        </div>
+    </section>
+    <section id="about" class="secondSection">
+        <div class="career-objective">
+            <div class="heading">Career <span class="purple">Objective</span></div>
+            <div class="description">As a passionate and dedicated B.Tech Computer Science Student, I aim to leverage
+                my strong foundation in programming, data structures, and software development to contribute meaningfully
+                to innovate and impactful technology projects.
+            </div>
+        </div>
+        <div class="about">
+            <div class="profile">
+                <div class="heading-small"><span class="purple">Profile</span></div>
+                <div class="description">Harshavardhan Ballanki<br />
+                harshaballanki05@gmail.com<br />
+                14/05/2005<br />
+                (+91)-9908805178</div>
+            </div>
+            <div class="education">
+                <div class="heading-small"><span class="purple">Education</span></div>
+                <div class="description">B.Tech, Computer Science & Engineering<br />
+                Andhra University <br />
+                Maddilapalem, Vizag</div>
+            </div>
+            <div class="certifications">
+                <div class="heading-small"><span class="purple">Cerifications</span></div>
+                <div class="description">
+                <ul>
+                    <li>Harvard's CS50P - Introduction to Programming with Python</li>
+                    <li>Coursera - Machine Learning Specialization by Andrew Ng</li>
+                    <li>Coursera - Meta Frontend Developer Professional Cerificate</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="thirdSection">
+        <div class="heading">My <span class="purple">Skills</span></div>
+        <div class="skills-container">
+
+                <!-- Programming Languages -->
+                <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"> C</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"> Java</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</li>
+                </ul>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-card">
+                <h3>Web Development</h3>
+                <ul>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"> React</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"> Node.js</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"> Django</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"> SQLite</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"> MongoDB</li>
+                </ul>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"> Pandas</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"> NumPy</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"> Scikit-learn</li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"> TensorFlow</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourthSection" id="projects">
+        <div class="heading"><span class="purple">Projects</span> I've Done</div>
+            <div class="projects">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000"  data-pause="false" data-wrap="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper d-flex justify-content-center gap-3">
+                                <div class="card">
+                                    <img src="./images/personal-portfolio-website.jpg" class="card-img-top" alt="responsive-personal-portfolio">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Personal Portfolio</h5>
+                                        <p class="card-text">Personal website which showcases skills, expertise, and previous work.</p>
+                                        <a href="#" class="btn btn-primary">GitHub Link</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./images/simon-game.png" class="card-img-top" alt="simon-game-challenge">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simon Game Challenge</h5>
+                                        <p class="card-text">A fun memory-based web game built as part of Angela Yu’s Web Development Bootcamp.</p>
+                                        <a href="https://github.com/HarshavardhanBallanki/simon-game-challenge" class="btn btn-primary">GitHub Link</a>
+                                    </div>
+                                </div>        
+                                <div class="card">
+                                    <img src="./images/e-commerce-website.png" class="card-img-top" alt="ecommerce-store">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ecommerce Store</h5>
+                                        <p class="card-text">A fully responsive eCommerce website features product listings, cart functionality, and a user-friendly shopping interface.</p>
+                                        <a href="#" class="btn btn-primary">GitHub Link</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="cards-wrapper d-flex justify-content-center gap-3">
+                                <div class="card">
+                                <img src="./images/carbon-emissions-prediction.webp" class="card-img-top" alt="project 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carbon Emissions Prediction</h5>
+                                    <p class="card-text">forecasts CO₂ emissions using country-level data like energy use and economic indicators.</p>
+                                    <a href="https://github.com/HarshavardhanBallanki/Carbon-Emissions-Prediction-Project" class="btn btn-primary">GitHub Link</a>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="./images/employee-salary-forecasting.jpg" class="card-img-top" alt="project 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Employee Salary Forecasting</h5>
+                                    <p class="card-text">predicts employee salaries based on features like experience, education, role, and location.</p>
+                                    <a href="#" class="btn btn-primary">GitHub Link</a>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="./images/movie-web-app.webp" class="card-img-top" alt="project 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Movie Web App</h5>
+                                    <p class="card-text">Allows users to browse, search, and view details of movies using real-time data fetched from a public movie API </p>
+                                    <a href="#" class="btn btn-primary">GitHub Link</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="carousel-inner">
+                <!-- JS will inject carousel-item slides with 3 cards each -->
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>            
+        </div>
+    </section>
+    <section id="contact" class="fifthSection">
+        <div class="heading"><span class="purple">Contact</span> Me</div>
+        <div class="leftSection">
+            <div id="address">
+                <h4><i class="fa-solid fa-house"></i> Address</h4>
+                <p>Visakhapatnam, Andhra Pradesh</p>
+                <p>India, 530051</p>
+            </div>
+            <div id="phone">
+                <h4><i class="fa-solid fa-phone"></i> Phone</h4>
+                <p>+91-9908805178</p>
+            </div>
+            <div id="email">
+                <h4><i class="fa-solid fa-envelope"></i> Email</h4>
+                <p>harshaballanki05@gmail.com</p>
+                <p>harshavardhanballanki@gmail.com</p>
+            </div>
+        </div>
+        <div class="rightSection">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c99b19f0-6757-4087-b7cc-12287dcbf439">               
+                <input type="text" id="name" name="name"  placeholder="Enter your Full Name" /><br />               
+                <input type="email" id="email-address" name="email-address" placeholder="Enter your Email ID" /><br />                
+                <input type="text" id="subject" name="subject" placeholder="Subject" /><br />              
+                <textarea id="message" name="message" rows="3" cols="30" placeholder="Your Message"></textarea><br />
+                <div><button type="submit" id="submit">Submit</button>
+                <input type="reset" id="clear" /></div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+  <div class="social-icons">
+    <a href="https://github.com/HarshavardhanBallanki" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/harshavardhan-ballanki/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+  <p>&copy; 2025 Harshavardhan Ballanki. All rights reserved.</p>
+</footer>
+<script src="./index.js"></script>  
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['ML Engineer','Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+  $('#carouselExampleControls').carousel({
+    interval: 5000,
+    pause: false,
+    wrap: true
+  });
+</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
