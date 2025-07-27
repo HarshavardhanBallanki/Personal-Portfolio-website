@@ -85,9 +85,9 @@ Some areas of interest:
 
 I’d love to connect! Feel free to reach out to me through the following platforms:
 
-- 📧 Email: [your.email@example.com](mailto:harshaballanki05@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/harshavardhan-ballanki)
-- 🐱 GitHub: [github.com/yourusername](https://github.com/HarshavardhanBallanki)
+- 📧 Email: [harshaballanki05@gmail.com](mailto:harshaballanki05@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/harshavardhan-ballanki](https://linkedin.com/in/harshavardhan-ballanki)
+- 🐱 GitHub: [github.com/HarshavardhanBallanki](https://github.com/HarshavardhanBallanki)
 
 ## 🚀 Getting Started
 
